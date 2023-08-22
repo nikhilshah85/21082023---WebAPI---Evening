@@ -1,0 +1,15 @@
+Pre-requisites
+
+1. Fundamentals of
+	OOPS
+	HTML, CSS and JS
+	Visual Studio and SQL Server
+
+2. Softwares
+	Visual Studio 2022 (2019 is fine)
+	SQL Server 2014 or above (sqlexpress is fine)
+	SQL Server management Studio (SSMS)
+	Git for OS (windows / mac)
+
+	if you do not have this softwares, use Cloud lab - it has all above 
+

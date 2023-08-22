@@ -1,0 +1,24 @@
+1. What is WebAPI, what, why, where, how and when 
+2. What WebAPI and REST API
+3. Create webAPi with in-Memory collection of objects - CRUD 
+4. WebAPi with EF Core - with SQL Server - CRUD operations
+
+-----------
+
+5. Consume APi in frontend - (Angular,React,ASP-MVC, Java, Node etc...)
+6. Client Side - this is fastest - less secured
+7. Server Side - this is safest
+
+---------
+Design patterns
+
+8 DI - Dependency injection 
+9 ORM - Object Relational Mappeing (Entity Framework)
+10 Repository Pattern 
+11 Middleware and Services 
+12. Tools to test API 
+	PostMan
+	Fiddler
+	Swagger - come inbuid with .net core 5.0 and above
+-----------------------------------------------
+	This will get you into the world of WebAPI development

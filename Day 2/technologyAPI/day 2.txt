@@ -1,0 +1,26 @@
+Day 2 App:
+
+First WebAPI with inMemory Collection of technologies with CRUD operations - technologyAPI
+
+
+steps
+
+
+1. Create a new WebAPi project - technologyAPI
+2. Add a new Controller - under the controller folder - API - technologyController 
+3. Add a static list of string to store technology list
+	 static List<string> techList = new List<string>();
+4. Add some same technology name in the list
+	    static List<string> techList = new List<string>()
+     	    {
+                "ASP.Net MVC",
+                "Angular",
+                "React",
+                "ASP.Net WebAPI",
+                "Azure",
+                "GCP",
+                "SQL Server"
+     	   };
+
+5. We will add methods to return all the technology, technolgy by index, technology count, technolgy search, etc....
+	
