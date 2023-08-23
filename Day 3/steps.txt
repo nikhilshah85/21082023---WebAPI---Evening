@@ -1,0 +1,25 @@
+Day 3: 
+
+First API with Inmemory collection of Objects
+
+----------------------------------------------------------------
+step 1 : Create a new WebAPI Project - EmployeeManagementAPI
+step 2 : Add a new Entity/Model/Class employee
+step 3 : Add properties / get;set; to the class	
+		empNo, empName, empDesignation,empSalary,empIsPermenant,empDept
+step 4: Add a static collection of employee and add some sample employee details
+
+step 5: we will methods to work with this collection
+		getAllEmployees()
+		getEmployeeById(int id)
+		getEmployeeByDesignation(string desg)
+		getEmployeeByDept(int dept)
+		getTotalEmployee()
+		getTotalSalaryPaid()
+		getEmployeeByState(bool isPermenant)
+
+		addNewEmployee(Employee newEmployee)
+		updateEmployee(Employee changes)
+		deleteEmployee(int empno)
+
+step 6: Create a API controller and add action HTTP methods for above methods to allow users to interact
