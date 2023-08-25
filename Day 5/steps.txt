@@ -1,0 +1,97 @@
+1. WebAPI
+2. WebAPI in Memory collection of premitive data type
+3. WebAPI with Memory collection of custom datatype
+	swagger
+	Routing
+	attributes
+4. When application grows, we will have more data
+	Thus let us upgrade app to database
+
+	SQL Server on Azure cloud for me (this is to show the demo)
+	we can use ADO.Net / OLEDB / ODBC  drivers to communicate with databse
+	
+	we will rater use new technology, faster and easy with Design pattern
+	ORM design pattern - Entity framework 
+
+	perform crud operation
+
+
+----------------------------------------------------------------
+step 1: create a new database, shoppingDB
+step 2: add a table products with pId, pName, pCategory, pPrice, pIsInStock
+	add some sample data
+step 3: in the new API project , we wish to use Entity Framework, but application has no idea about the same, thus we will have to add 
+	nuget packages for applicaiton to support EF
+	solution explorer -> right click -> Management nuget package -> browse -> Type entityframeworkcore	
+
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore.Design
+	Microsoft.EntityFrameworkCore
+	Microsoft.EntityFrameworkCore.SqlServer (which ever database you will use, oracle, db2, mongodb)
+
+step 4: run ef command to download POCO classes / Mapping with database 
+	tools -> Nuget package manager -> package manager console
+
+Put ur server name and database name
+	
+	Scaffold-DbContext "server=;database=;integrated security=true" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF
+
+	"Server=tcp:shoppingapiserver.database.windows.net,1433;Initial Catalog=shoppingDB_Nikhil;Persist Security Info=False;User ID=trainer;Password=Password@1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF
+
+
+step 5 : check the models folder in solution explorer
+
+step 6 : add new api controller with actions useing EF - choose table name as model name and dbcontext file name
+
+step 7 : it uses DI by default (half configured and half we have to, but we will remove half)
+
+	instantiate new object of dbContext 
+		line 16 :
+		private readonly ShoppingDbNikhilContext _context = new ShoppingDbNikhilContext();
+
+
+	comment the constructor
+		        //public productController(ShoppingDbNikhilContext context)
+        //{
+        //    _context = context;
+        //}
+
+step 8: build the application, run the applicaiton, test the application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

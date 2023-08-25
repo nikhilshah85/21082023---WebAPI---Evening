@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\shoppingAPI_EF.props" />
+</Project>

@@ -1,0 +1,31 @@
+
+Project Name : Create a WebAPI App - shoppingAPI
+Submission Time : Friday Evening - 25th Aug 23 - Before 6pm
+
+We wish to share below details with other organizations/projects
+
+	2 Models - products and cartinfo
+	2 Controller - productscontroller and cartinfocontroller
+
+
+	Models
+	products (ADD SOME SAMPLE DATA 20 RECORDS)
+		productId, productName, productCategory,productPrice,productDiscountRate, productIsInStock
+
+		getAllProduct
+		getProductById(int pId)
+		getProductByCategory(string category)
+		getProductIsInStock(string yesno)
+		addProduct
+		upadteProduct
+		deleteProduct
+  ------------------------------------------------------------------------------------------------------
+	cartInfo
+		customerID, customerName, productId,buyQty,totalAmount (ADD SOME SAMPLE DATA 10 RECORDS)
+		
+		getAllProductsInCart
+		getCartProductsByCutomerId
+		getCartProductsByCustomerName
+		addProductToCart(product newProduct) -- this is fist logical task
+		removeProductFromCart(int pid)
+		
