@@ -1,0 +1,31 @@
+﻿<h1> User Post Details </h1>
+
+<button class="btn btn-primary" onclick="getPostData()">Display Post</button>
+
+<table class="table table-bordered"></table>
+
+<script>
+    function getPostData()
+    {
+        var url =  "https://jsonplaceholder.typicode.com/posts";
+
+        fetch(url).then(dataFormat => dataFormat.json()) //put the data format here
+                  .then(data =>{
+                       // alert('Success');
+                        console.log(data);
+                        for(var i=0;i<data.length;i++)
+                        {
+                            $("table").append("<tr>" +
+                                "<td>" + data[i].userId + "</td>" +
+                                "<td>" + data[i].id + "</td>" +
+                                "<td>" + data[i].title + "</td>" +
+                                "<td>" + data[i].body + "</td>"                            
+                            + "</tr>")
+                        }
+                  }) 
+                  .catch(err =>{
+                      alert('Errorrrrrrr');
+                  })
+
+    }
+</script>

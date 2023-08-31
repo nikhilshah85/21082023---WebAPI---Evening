@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\apicalls_Fetchapi.props" />
+</Project>

@@ -1,0 +1,11 @@
+Complete code 
+https://codeshare.io/X8jnj8
+
+
+
+try - Challange
+https://jsonplaceholder.typicode.com/users
+
+make a call to above url useing fetch api - display below details
+
+Name Username email City lat lng companyname companycatchphase

@@ -1,0 +1,16 @@
+As a API developer u work on
+
+1. developing and publishing api (with different data source as required)
+2. Consume the api and display data on your front end application (web, mobile, watch, desktop, console, library etc....)
+	we will make api calls from ASP.net MVC application 
+----------
+
+there are 2 ways to make calls
+	a. client side calls
+		fetch api - web standard built into every browser, and used Javascript to make calls
+			this is the fastest way to get the data, a little bit risky / unscerured for confendential data
+			fetch api returns a promise it is very easy to use - has a try catch finally sintax
+									           then catch finally
+	b. server side calls
+			HttpClient - also a web standard for server calls
+			safest to use, a little bit slow than above one (as it needs hopping of server)
