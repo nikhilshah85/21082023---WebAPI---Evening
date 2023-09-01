@@ -14,3 +14,10 @@ there are 2 ways to make calls
 	b. server side calls
 			HttpClient - also a web standard for server calls
 			safest to use, a little bit slow than above one (as it needs hopping of server)
+
+https://jsonplaceholder.typicode.com/posts
+
+		a. Create a new class and add properties of data which is going to come
+		b. create a variable to hold the data
+		c. create a method/function - useing HttpClient make a call - get, put, post, delete etc...
+		d. call the above the function to get the data and then, display the data

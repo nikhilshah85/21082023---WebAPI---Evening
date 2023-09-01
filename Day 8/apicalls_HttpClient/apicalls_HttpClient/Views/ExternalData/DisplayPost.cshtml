@@ -1,0 +1,15 @@
+﻿
+
+<h1> User Post Data </h1>
+
+<table>
+    @foreach (var item in ViewBag.post)
+    {
+        <tr>
+            <td> @item.id </td>
+            <td> @item.userId </td>
+            <td> @item.title </td>
+            <td> @item.body </td>
+        </tr>
+    }
+</table>
