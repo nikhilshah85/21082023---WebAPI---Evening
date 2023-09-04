@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+			As a developer, we create lots of objects in application, but we never, 
+			1. write code to destroy them
+			2. clear memory
+			3. Never write Destructor
+			4. Never implement IDisposable 
+
+
+			Why ???
+
+
+
+			Why ?
+			Because we are been told - GC - Garbage Collector will do it for us
+			but when ? - at a random time 
+
+			this is same thing with Java
+
+
+
+			-- but we cannot rely on that, because there is no fixed time when will GC come
+			-- we can also call GC by writeing a code, but we have to manually call it, which is not automated
+
+			--as the users accross the globe has increased. which is affecting the performance for an 								application
+------------------------------------------------------
+
+
+
+
+
+		instead a new mechanism, design, idea got evolved for a framework where
+			Framework will create the object for you
+			Framework will destroy the object fo you
+			Framework will also take care of shareing the objects for you, you do not need to implement State management
+	
+		This feature is called Dependency Injection 
+
+			Steps, 
+			1. do not instantiate any object
+			2. Configure the object as a service in program.cs, we have 3 methods for the same
+
+		we have to configure the same as a Service, and we have 3 methods available for the same, 
+			we need to use 1 of them for every object we want to be created by runtime
+			
+
+
+		AddTranscient(Percall) - this is when used, new object is created, response is processed and object gets destroyed
+		AddScoped(PerSession) - 1 object for everysession, destroyed when session ends/timeout
+		AddSingleTon(Global) - 1 object created at the start of application, same is used for all users and destroyed when server stops
+
+			your expertise is in chooseing the right method, some examples when to use which method
+
+			AddTranscient - when every call data is differnt - eg. Live StockMarket rates, makepayment(payment gateway), live cric score
+			AddScoped - this is for user - login to bank account
+			AddSingeTon - same object /data for all the user - eg - FlightList schedule, train ticket schedule
+
+
+
+
+
+
+
+
+
+
+
+
